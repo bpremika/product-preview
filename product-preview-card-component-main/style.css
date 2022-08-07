@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%) ;
+}
+h2{
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+}
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+ }
+.card { 
+    border-radius: 7px;
+    margin: 60px auto;
+    background-color: white;
+    display: flex;
+    height:  420px;
+    width: 560px;
+    align-items: center;
+}
+.product-info{
+    margin: 0px 25px;
+}
+.product-img {
+    width: 280px;
+    height: 420px;
+}
+.product-img #show-desktop{
+    height: 420px;
+    border-radius: 7px 0 0 7px;
+}
+.product-img #show-mobile{
+    display: none ;
+}
+
+.product-text h2{
+    margin: 15px 0px;
+    max-width: 10ch;
+}
+.product-text #product-des{
+    margin: 20px 0px;
+    max-width: 30ch;
+    
+}
+.product-price{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.product-price h2{
+    color:  hsl(158, 36%, 37%);
+}
+.product-price p{
+    text-decoration:line-through;
+    margin: auto;
+}
+
+.cart-btn button{
+    background-color:hsl(158, 36%, 37%) ;
+    border:0px;
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+.cart-btn button img{
+    margin: auto 15px;
+}
+
+.cart-btn p{
+    color: white;
+    padding: 0px 15px 0px 0px;
+}
+
+.cart-btn button:hover{
+    background-color: #184131 ;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:375px){
+    .card{
+        height: 500px;
+        width: 300px;
+        flex-direction: column;
+    }
+    .product-img #show-desktop{
+        display: none !important;
+    }
+    .product-img #show-mobile{
+        
+        display: flex !important;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        object-fit: fill;
+        border-radius: 7px 7px 0px 0px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 22px;
+    }
+
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+}
